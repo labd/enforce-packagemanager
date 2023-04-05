@@ -1,0 +1,27 @@
+{
+  "name": "enforce-packagemanager-field",
+  "version": "1.0.0",
+  "description": "Only allow running commands when using the same package manager and version as the packageManager field",
+  "main": "index.js",
+  "packageManager": "pnpm@8.1.0",
+  "scripts": {
+    "start": "tsup src/index.ts --watch",
+    "build": "tsup",
+    "lint": "eslint src/ --ext ts",
+    "test": "jest",
+    "tsc": "tsc --noEmit -p ."
+  },
+  "keywords": [
+    "packageManager",
+    "enforce",
+    "enforce-packagemanager-field"
+  ],
+  "author": "Boris Besemer",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.15.11",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.3",
+    "which-pm-runs": "^1.1.0"
+  }
+}
