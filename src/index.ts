@@ -9,8 +9,6 @@ if (!usedPackageManager) {
   process.exit(1);
 }
 
-const cwd = process.cwd();
-
 // Import package.json
 const packageJsonPath = resolve(process.cwd(), "./package.json");
 const packageJsonContent = readFileSync(packageJsonPath, "utf-8");
@@ -22,8 +20,6 @@ if (!wantedPackageManager) {
   console.error("No packageManager field found in project");
   process.exit(1);
 }
-
-console.log("getting here");
 
 const [packageManager, version] = wantedPackageManager.split("@");
 

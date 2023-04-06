@@ -1,0 +1,28 @@
+{
+  "include": ["src", "jest.config.cjs", ".eslintrc.cjs", "tsup.config.cjs"],
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "nodenext",
+    "lib": ["dom", "esnext"],
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "rootDir": "./src",
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "outDir": "dist"
+  }
+}
